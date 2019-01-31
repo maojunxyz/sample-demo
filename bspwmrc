@@ -1,8 +1,15 @@
 #! /bin/sh
 
-sxhkd &
+#LAUNCHERS
+$HOME/.config/bspwm/autostart.sh
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor eDP-1 -d I II III IV V
+bspc monitor HDMI-2 -d VI VII VIII IX X
+#bspc monitor eDP-1 -s HDMI-2
+#for monitor in $(bspc query -M); do
+#    bspc monitor $monitor -d I II III IV V VI VII VIII IX X
+#done
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -13,6 +20,11 @@ bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
+#bspc rule -a jetbrains-idea desktop='^3'
+#bspc rule -a jetbrains-datagrip desktop='^3'
+bspc rule -a "VirtualBox Machine" desktop='^7'
+bspc rule -a "VirtualBox Manager" desktop='^10'
+bspc rule -a rdesktop desktop='^3'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
