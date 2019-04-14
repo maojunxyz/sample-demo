@@ -21,9 +21,8 @@ bspc config gapless_monocle      true
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 #bspc rule -a jetbrains-idea desktop='^3'
-#bspc rule -a jetbrains-datagrip desktop='^3'
-bspc rule -a "VirtualBox Machine" desktop='^7'
-bspc rule -a "VirtualBox Manager" desktop='^10'
+bspc rule -a jetbrains-datagrip desktop='^3'
+#bspc rule -a "VirtualBox Manager" desktop='^10'
 bspc rule -a rdesktop desktop='^3'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on

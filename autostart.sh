@@ -15,8 +15,7 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --pos 900x520 --rotate normal  
 #xrandr --output HDMI-2 --auto --rotate left --pos 0x0 --output eDP-1 --pos 900x520 
 
 
-$HOME/.config/polybar/launch.sh &
-$HOME/.config/bspwm/qq_notify.sh &
+$HOME/.config/bspwm/scripts/qq_notify.sh &
 #$HOME/qq_notify.sh &
 
 #change your keyboard if you need it
