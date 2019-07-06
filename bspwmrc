@@ -3,27 +3,39 @@
 #LAUNCHERS
 $HOME/.config/bspwm/autostart.sh
 
-#bspc monitor -d I II III IV V VI VII VIII IX X
-bspc monitor eDP-1 -d I II III IV V
-bspc monitor HDMI-2 -d VI VII VIII IX X
+# exchange monitor positon right to left(default left to right)
 #bspc monitor eDP-1 -s HDMI-2
-#for monitor in $(bspc query -M); do
-#    bspc monitor $monitor -d I II III IV V VI VII VIII IX X
-#done
 
-bspc config border_width         2
-bspc config window_gap          12
+# query monitor name
+#monitor=$(bspc query -M --names)
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# auto adjust one or two monitor display
+hdmi2isconnected="`xrandr -q | awk '/HDMI-2 connected/'`"
+if [ "$hdmi2isconnected" != "" ]; then
+    bspc monitor eDP-1 -d I II III IV V
+    bspc monitor HDMI-2 -d VI VII VIII IX X
+else
+    bspc monitor -d I II III IV V VI VII VIII IX X
+fi
 
+# display style config
+bspc config border_width         1
+bspc config window_gap           2
+bspc config top_padding         0
+bspc config split_ratio         0.50
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_follows_pointer true
+
+
+# displya ruler config
+bspc rule -a st-256color desktop='^1'
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
-#bspc rule -a jetbrains-idea desktop='^3'
-bspc rule -a jetbrains-datagrip desktop='^3'
-#bspc rule -a "VirtualBox Manager" desktop='^10'
-bspc rule -a rdesktop desktop='^3'
-bspc rule -a mplayer2 state=floating
+bspc rule -a jetbrains-idea desktop='^3'
+bspc rule -a "VirtualBox Manager" desktop='^10'
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+
+
