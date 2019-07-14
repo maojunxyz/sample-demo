@@ -23,7 +23,7 @@ sxhkd &
 wmname LG3D &
 run  xflux -l 51°25′35.81″ -g 128°48′13.36 &
 run fcitx &
-
-numlockx on &
-blueberry-tray &
+flameshot &
+copyq &
 nm-applet &
+compton &
