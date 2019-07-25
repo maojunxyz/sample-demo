@@ -27,3 +27,4 @@ flameshot &
 copyq &
 nm-applet &
 compton &
+goldendict &
