@@ -35,6 +35,7 @@ bspc rule -a boostnote desktop='^2'
 bspc rule -a code-oss desktop='^3'
 bspc rule -a jetbrains-idea desktop='^3'
 bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a copyq state=floating follow=on
 bspc rule -a "VirtualBox Manager" desktop='^10'
 bspc rule -a Screenkey manage=off
 
