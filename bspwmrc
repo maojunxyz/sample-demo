@@ -29,14 +29,18 @@ bspc config focus_follows_pointer true
 
 
 # displya ruler config
-bspc rule -a st-256color desktop='^1'
+bspc rule -a Boostnote desktop='^1'
+bspc rule -a Wps desktop='^1'
+bspc rule -a Et desktop='^1'
+bspc rule -a Wpp desktop='^1'
+bspc rule -a "Foxit Reader" desktop='^1'
 bspc rule -a Chromium desktop='^2'
-bspc rule -a boostnote desktop='^2'
-bspc rule -a code-oss desktop='^3'
+bspc rule -a Gimp state=floating follow=on desktop='^2'
 bspc rule -a jetbrains-idea desktop='^3'
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a copyq state=floating follow=on
+bspc rule -a Forticlientsslvpn desktop='^9'
 bspc rule -a "VirtualBox Manager" desktop='^10'
+bspc rule -a "VirtualBox Machine" desktop='^10'
+bspc rule -a copyq state=floating follow=on
 bspc rule -a Screenkey manage=off
 
 
