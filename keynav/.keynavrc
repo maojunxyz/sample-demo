@@ -1,0 +1,68 @@
+# This is a keynavrc file. Yours should live in 
+# $HOME/.keynavrc
+#
+# Lines beginning with '#' are comments.
+# Format is:
+#   keysequence cmd1,cmd2,cmd3...
+#
+clear
+Escape end
+
+###  using a 3x3 grid with nethack-vi keys
+ctrl+semicolon start, grid 3x3
+h cell-select 1x2      # left
+j cell-select 2x3      # down
+k cell-select 2x1      # up
+l cell-select 3x2      # right
+y cell-select 1x1      # up-left
+i cell-select 3x1      # up-right
+n cell-select 1x3      # down-left
+comma cell-select 3x3      # down-right
+semicolon cell-select 2x2 # center
+shift+h move-left .10
+shift+j move-down .10
+shift+k move-up .10
+shift+l move-right .10
+shift+y move-left,move-up
+shift+i move-right,move-up
+shift+n move-left,move-down
+shift+comma move-right,move-down
+space warp,click 1,end
+### Mouse buttons
+1 click 1      # left button
+2 click 2      # middle button
+3 click 3      # right button
+4 click 4      # scroll-up
+5 click 5      # scroll-down
+6 click 6      # scroll-left
+7 click 7      # scroll-right
+
+### History
+u history-back
+
+# Zoom to the cursor location with a given height and width
+c cursorzoom 200 200
+
+# Zoom to the current window(Cursor window)
+z windowzoom
+
+# Cursor moves to the center of the grid
+w warp
+
+# Handy for holding ctrl while using keynav:
+ctrl+h cut-left
+ctrl+j cut-down
+ctrl+k cut-up
+ctrl+l cut-right
+ctrl+y cut-left,cut-up
+ctrl+u cut-right,cut-up
+ctrl+b cut-left,cut-down
+ctrl+n cut-right,cut-down
+
+### Drag examples
+# Start drag holding the left mouse button
+q drag 1
+# Dragging with modifiers
+ctrl+q drag 1 ctrl
+shift+q drag 1 shift
+shift+ctrl+q drag 1 shift+ctrl
