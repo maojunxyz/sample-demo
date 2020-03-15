@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/maojun/test'
+let g:netrw_dirhist_2='/etc/ssh'
+let g:netrw_dirhist_3='/home/maojun/.config/sxhkd'
+let g:netrw_dirhist_4='/home/maojun/.config'
+let g:netrw_dirhist_5='/home/maojun/docker/nextcloud'
+let g:netrw_dirhist_6='/home/maojun/Documents'
