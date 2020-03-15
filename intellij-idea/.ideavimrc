@@ -1,0 +1,20 @@
+"vimrc by maojun
+"Last Update: 2019-01-02 17:09:25
+
+set expandtab "使用空格替代制表符
+set nu "显示行号
+syntax on "语法高亮
+set nocompatible "去掉与Vi一致性模式
+set hlsearch "高亮搜索
+set relativenumber "相对行好
+
+
+set tabstop=4 "统一缩进为4
+set softtabstop=4
+set shiftwidth=4
+
+set termencoding=utf-8 "设置为uft-8编码"
+set encoding=utf8
+set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+
+
