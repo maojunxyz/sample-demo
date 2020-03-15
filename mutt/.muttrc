@@ -1,0 +1,27 @@
+#自定义发件人信息
+set envelope_from = yes
+set from      = maojunxyz@gmail.com
+set realname  = "maojun"
+
+set imap_user = maojunxyz@gmail.com
+set imap_pass = jruxzauawipkhtql
+set smtp_url  = smtp://maojunxyz@gmail.com@smtp.gmail.com:587/
+set smtp_pass = jruxzauawipkhtql
+
+
+#收信设置，使用fetchmail收信的时候将下面注释符号去掉半作相应修改，本次使用getmail故此处保持注释状态
+set pop_last=yes
+set pop_pass=jruxzauawipkhtql
+set pop_user=maojunxyz@gmail.com
+set pop_host=pops://pop.gmail.com
+
+set folder    = imaps://imap.gmail.com/
+set spoolfile = imaps://imap.gmail.com/INBOX
+set postponed = "+[Gmail]/Drafts"
+
+set editor = "vim"
+set charset = "utf-8"
+
+set header_cache     =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
