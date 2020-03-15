@@ -1,0 +1,30 @@
+# Automatic feed reloads
+
+confirm-exit yes 
+auto-reload yes 
+reload-time 30  # default 60 minutes
+reload-threads 2
+notify-beep yes 
+browser chromium
+cleanup-on-quit yes
+download-path "~/Downloads/newsboat"
+player mpv
+
+
+
+# keyboard binds
+
+#unbind-key j
+#bind-key \ reload-all
+bind-key j next
+bind-key k prev
+bind-key J next-feed
+bind-key K prev-feed
+bind-key j down article
+bind-key k up article
+bind-key J next article
+bind-key K prev article
+
+# to use a macro, you must first press the , key, followed by the keybind. In the example above, you would type , + y
+macro y set browser "mpv %u"; open-in-browser ; set browser "elinks %u"
+
