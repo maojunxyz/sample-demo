@@ -3,10 +3,10 @@ set envelope_from = yes
 set from      = maojunxyz@gmail.com
 set realname  = "maojun"
 
-set imap_user = maojunxyz@gmail.com
-set imap_pass = jruxzauawipkhtql
+set imap_user = ${{ secrets.email_address }}
+set imap_pass = ${{ secrets.email_password }}
 set smtp_url  = smtp://maojunxyz@gmail.com@smtp.gmail.com:587/
-set smtp_pass = jruxzauawipkhtql
+set smtp_pass = ${{ secrets.email_password }}
 
 
 #收信设置，使用fetchmail收信的时候将下面注释符号去掉半作相应修改，本次使用getmail故此处保持注释状态
