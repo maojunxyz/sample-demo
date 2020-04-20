@@ -1,0 +1,57 @@
+" VIFM COLORS
+" solarized dark
+" based on: https://github.com/istib/dotfiles/blob/master/vifm/vifm-colors
+
+" Default = -1 = None, can be used for transparency or default color
+" Black = 0
+" Red = 1
+" Green = 2
+" Yellow = 3
+" Blue = 4
+" Magenta = 5
+" Cyan = 6
+" White = 7
+
+" STYLES
+" bold
+" underline
+" reverse or inverse
+" standout
+" none
+
+
+highlight clear
+
+highlight Win             cterm=none ctermfg=default    ctermbg=none
+
+highlight TopLine         cterm=none ctermfg=blue       ctermbg=none
+highlight TopLineSel      cterm=none ctermfg=blue       ctermbg=none
+highlight StatusLine      cterm=none ctermfg=blue       ctermbg=none
+highlight Border          cterm=none ctermfg=blue       ctermbg=none
+
+highlight Selected        cterm=bold ctermfg=magenta    ctermbg=default
+highlight CurrLine        cterm=bold ctermfg=default    ctermbg=blue
+
+highlight WildMenu        cterm=underline,reverse ctermfg=white ctermbg=black
+highlight CmdLine         cterm=none ctermfg=white ctermbg=black
+highlight ErrorMsg        cterm=none ctermfg=red ctermbg=black
+
+highlight Directory       cterm=none ctermfg=cyan ctermbg=default
+highlight Link            cterm=none ctermfg=yellow ctermbg=default
+highlight BrokenLink      cterm=none ctermfg=red ctermbg=default
+highlight Socket          cterm=none ctermfg=magenta ctermbg=default
+highlight Device          cterm=none ctermfg=red ctermbg=default
+highlight Fifo            cterm=none ctermfg=cyan ctermbg=default
+highlight Executable      cterm=none ctermfg=green ctermbg=default
+
+
+" file name specific highlight
+highlight /^.*(\.a|\.applescript|\.as|\.asa|\.awk|\.bash|\.bat|\.bib|\.bsh|\.bst|\.c|\.c++|\.cabal|\.cc|\.cfg|\.cgi|\.clang-format|\.clj|\.cmake|\.cmake.in|\.com|\.conf|\.config|\.cp|\.cpp|\.cr|\.cs|\.csv|\.csx|\.cxx|\.d|\.dart|\.def|\.desktop|\.di|\.diff|\.dll|\.dot|\.dox|\.dpr|\.el|\.elm|\.epp|\.erl|\.ex|\.exe|\.exs|\.fdignore|\.fish|\.flake8|\.fs|\.fsi|\.fsx|\.gemspec|\.gitattributes|\.gitconfig|\.gitignore|\.gitmodules|\.go|\.gradle|\.groovy|\.gv|\.gvy|\.h|\.h++|\.hgrc|\.hh|\.hpp|\.hs|\.htc|\.htm|\.html|\.hxx|\.ignore|\.inc|\.ini|\.inl|\.ipp|\.ipynb|\.java|\.jl|\.js|\.json|\.kdevelop|\.ko|\.kt|\.kts|\.less|\.lisp|\.ll|\.ltx|\.lua|\.m|\.make|\.markdown|\.matlab|\.md|\.mdown|\.mir|\.ml|\.mli|\.mn|\.nb|\.nix|\.p|\.pas|\.patch|\.php|\.pl|\.pm|\.pod|\.pp|\.pro|\.ps1|\.psd1|\.psm1|\.purs|\.py|\.r|\.rb|\.rgignore|\.rs|\.rst|\.sbt|\.scala|\.sh|\.shtml|\.so|\.sql|\.swift|\.t|\.tcl|\.td|\.tex|\.tml|\.toml|\.travis.yml|\.ts|\.tsx|\.txt|\.ui|\.vb|\.vim|\.xhtml|\.xml|\.xmp|\.yaml|\.yml|\.zsh|appveyor.yml|cmakelists.txt|codeowners|configure|configure.ac|contributors|contributors.md|contributors.txt|copying|copyright|css|dockerfile|doxyfile|hgrc|install|install.md|install.md.txt|license|license-apache|license-mit|makefile|makefile.am|manifest.in|passwd|readme|readme.md|readme.txt|requirements.txt|sconscript|sconstruct|setup.py|shadow)$/I cterm=none ctermfg=default ctermbg=default
+highlight /^.*\.(fnt|fon|otf|ttf)$/I cterm=none ctermfg=default ctermbg=default
+highlight /^.*(\.aux|\.bak|\.bbl|\.bc|\.bcf|\.blg|\.cache|\.class|\.dyn_hi|\.dyn_o|\.fdb_latexmk|\.fls|\.git|\.hi|\.idx|\.ilg|\.ind|\.la|\.lo|\.lock|\.log|\.o|\.orig|\.out|\.pid|\.pyc|\.rlib|\.scons_opt|\.sconsign.dblite|\.sty|\.swp|\.synctex.gz|\.tmp|\.toc|cmakecache.txt|makefile.in|package-lock.json|~)$/I cterm=none ctermfg=default ctermbg=default
+highlight /^.*\.(doc|docx|epub|ics|kex|odp|ods|odt|pdf|pps|ppt|pptx|ps|rtf|sxi|sxw|xlr|xls|xlsx)$/I cterm=none ctermfg=default ctermbg=default
+highlight /^.*\.(bmp|gif|ico|jpeg|jpg|pbm|pgm|png|ppm|svg|tif|xcf)$/I cterm=none ctermfg=default ctermbg=default
+highlight /^.*\.(aif|flac|mid|mp3|ogg|wav|wma)$/I cterm=none ctermfg=default ctermbg=green
+highlight /^.*(todo|todo.md|todo.txt)$/I cterm=bold ctermfg=default ctermbg=default
+highlight /^.*\.(avi|flv|h264|m4v|mkv|mov|mp4|mpeg|mpg|rm|swf|vob|wmv)$/I cterm=bold ctermfg=default ctermbg=default
+highlight /^.*\.(7z|apk|arj|bag|bin|bz|bz2|deb|dmg|gz|img|iso|jar|pkg|rar|rpm|tar|tbz|tbz2|tgz|toast|vcd|xz|z|zip)$/I cterm=bold ctermfg=default ctermbg=white
