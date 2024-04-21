@@ -1,5 +1,3 @@
-# dotfile 
+# sample-demo
 
-This is my dotfiles.
-
-Please refer to the readme file in each directory for more details
+Use to record the code snippets and some configuration information.
