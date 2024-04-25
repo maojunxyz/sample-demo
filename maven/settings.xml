@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>C:\Users\maojun\.m2\repository</localRepository>      
+    <mirrors>
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>public</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+        <!--        spring-->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>spring</name>
+            <url>https://maven.aliyun.com/repository/spring</url>
+        </mirror>
+        <!--        spring-plugin-->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>spring-plugin</name>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+        </mirror>
+        <!--        google-->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>google</name>
+            <url>https://maven.aliyun.com/repository/google</url>
+        </mirror>
+        <!--        grails-core-->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>grails-core</name>
+            <url>https://maven.aliyun.com/repository/grails-core</url>
+        </mirror>
+        <!--        apache snapshots-->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>apache-snapshots</name>
+            <url>https://maven.aliyun.com/repository/apache-snapshots</url>
+        </mirror>
+    </mirrors>
+</settings>
