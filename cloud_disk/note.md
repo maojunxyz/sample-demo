@@ -17,3 +17,7 @@ mvn archetype:generate -DgroupId=xyz.maojun -DartifactId=cloud_disk -DarchetypeA
 ```sh
 mvn spring-boot:run
 ```
+
+## 创建数据库
+
+create database disk default charset utf8 collate utf8_general_ci;
