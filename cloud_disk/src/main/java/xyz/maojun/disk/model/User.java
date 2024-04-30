@@ -1,8 +1,9 @@
 package xyz.maojun.disk.model;
 
 import lombok.Data;
-
 import javax.persistence.*;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableId;
 
 @Data
 @Table(name = "user")

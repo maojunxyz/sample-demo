@@ -1,13 +1,11 @@
 package xyz.maojun.disk.model;
 
 import lombok.Data;
-
 import javax.persistence.*;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableId;
 
-@Data
-@Table(name = "userfile", uniqueConstraints = {
-        @UniqueConstraint(name = "fileindex", columnNames = {"fileName", "filePath", "extendName"})})
-@Entity
+@TableName("userfile")
 public class UserFile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
