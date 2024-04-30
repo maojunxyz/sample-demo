@@ -1,4 +1,4 @@
-maven镜像地址
+## maven镜像地址
 ```xml
     <mirror>
        <id>huaweicloud</id>                                                                                                                                       
@@ -7,5 +7,13 @@ maven镜像地址
      </mirror>
 ```
 
-初始化maven项目
-mvn archetype:generate -DgroupId=xyz.maojun -DartifactId=cloud_disk -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeCatalog=local -DinteractiveMode=false`
+## 初始化maven项目
+
+```sh
+mvn archetype:generate -DgroupId=xyz.maojun -DartifactId=cloud_disk -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeCatalog=local -DinteractiveMode=false
+```
+
+## 启动springboo
+```sh
+mvn spring-boot:run
+```
